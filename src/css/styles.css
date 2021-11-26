@@ -207,15 +207,16 @@
 }
 
 .open + .overlay {
+  display: block;
   background-color: hsla(0, 0%, 0%, 0.4);
 }
 
-.mobile-menu-list {
+.overlay {
   transition: transform 200ms ease;
   transform: translateX(-100%);
 }
 
-.open + .overlay .mobile-menu-list {
+.open + .overlay {
   transform: translateX(0);
 }
 
